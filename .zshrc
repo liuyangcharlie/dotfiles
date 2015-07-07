@@ -6,11 +6,19 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# %theme configurations%
 # Use Awesome Powerline Fonts for powerlevel9k theme
 POWERLEVEL9K_MODE='awesome-patched'
 # Powerlevel9k theme-Segment Customization
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+# enable the vcs segment in general
+POWERLEVEL9K_SHOW_CHANGESET=true
+# just show the 6 first characters of changeset
+POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
+# Reversed time format
+POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S,%D}'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
