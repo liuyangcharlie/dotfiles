@@ -6,6 +6,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
+# ANDROID_HOME Environment Variable for Android Studio
+export ANDROID_HOME=~/Library/Android/sdk
 
 # %theme configurations%
 # Use Awesome Powerline Fonts for powerlevel9k theme
@@ -58,12 +60,21 @@ POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S,%D}'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z)
+plugins=(git z svn coffee git-remote-branch github sublime gulp)
 
 # User configuration
-
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.shells:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# For npm global module installation
+export PATH=~/.npm-global/bin:$PATH
+# For Electron zips download
+# export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
+
+export SVN_EDITOR=vim
+
+# For Android Studio Gradle
+export PATH=/Applications/Android\ Studio.app/Contents/gradle/gradle-2.10/bin/gradle:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
