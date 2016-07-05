@@ -6,8 +6,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
-# ANDROID_HOME Environment Variable for Android Studio
-export ANDROID_HOME=~/Library/Android/sdk
 
 # %theme configurations%
 # Use Awesome Powerline Fonts for powerlevel9k theme
@@ -73,8 +71,10 @@ export PATH=~/.npm-global/bin:$PATH
 
 export SVN_EDITOR=vim
 
+# ANDROID_HOME Environment Variable for Android Studio
+export ANDROID_HOME=~/Library/Android/sdk
 # For Android Studio Gradle
-export PATH=/Applications/Android\ Studio.app/Contents/gradle/gradle-2.10/bin/gradle:$PATH
+export PATH=/Applications/Android\ Studio.app/Contents/gradle/gradle-2.10/bin/:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
