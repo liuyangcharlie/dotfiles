@@ -20,3 +20,4 @@
     logoutputencoding = utf-8
 [core]
     quotepath = false
+	editor = /usr/bin/vim
