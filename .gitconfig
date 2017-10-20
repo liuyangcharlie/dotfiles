@@ -2,15 +2,21 @@
     #email = liuyangcharlie@gmail.com
     #name = liuyang
 [alias]
-	lg = log --graph --pretty=oneline --abbrev-commit
-	co = checkout
-	st = status
-	ci = commit
+    lg = log --graph --pretty=oneline --abbrev-commit
+    co = checkout
+    st = status
+    ci = commit
     br = branch
-	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     lf = log --graph --pretty=oneline --abbrev-commit --stat
     df = difftool
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [merge]
-	tool = vimdiff
+    tool = vimdiff
+[gui]
+    encoding = utf-8
+[i18n]
+    logoutputencoding = utf-8
+[core]
+    quotepath = false
