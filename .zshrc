@@ -6,6 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
+
 # ANDROID_HOME Environment Variable for Android Studio
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_SDK_HOME=$ANDROID_HOME
@@ -18,6 +19,9 @@ ANDROID_NDK_ARM_BIN=~/Library/Android/sdk/android-ndk-r10e/toolchains/arm-linux-
 export ANDROID_SDK_TOOLS=/Users/lyc/Library/Android/sdk/tools
 ANDROID_PLATFORM=~/Library/Android/sdk/platform-tools
 export PATH=$ANDROID_NDK:$ANDROID_NDK_ARM_BIN:$ANDROID_PLATFORM:$ANDROID_SDK_TOOLS:$PATH
+
+# env variable configuration for Golang
+# export GOPATH=~/Documents/Code/common/src/go/src/:$GOPATH
 
 # %theme configurations%
 # Use Awesome Powerline Fonts for powerlevel9k theme
@@ -70,7 +74,7 @@ POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S,%D}'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z svn coffee git-remote-branch github sublime gulp osx)
+plugins=(git z svn coffee git-remote-branch github sublime gulp osx yarn npm iterm2 adb pip)
 
 # User configuration
 export PATH=$HOME/.shells:/usr/local/bin:$PATH
@@ -115,3 +119,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[[ -s "/Users/yangliu/.gvm/scripts/gvm" ]] && source "/Users/yangliu/.gvm/scripts/gvm"
