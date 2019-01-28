@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="agnoster"
 
 # ANDROID_HOME Environment Variable for Android Studio
 export ANDROID_HOME=~/Library/Android/sdk
@@ -16,7 +16,7 @@ export ANDROID_NDK_ROOT=~/Library/Android/sdk/android-ndk-r10e
 export ANDROID_NDK=$ANDROID_NDK_ROOT
 # export ANDROID_NDK_ARM_BIN=~/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/
 ANDROID_NDK_ARM_BIN=~/Library/Android/sdk/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/
-export ANDROID_SDK_TOOLS=/Users/lyc/Library/Android/sdk/tools
+export ANDROID_SDK_TOOLS=~/Library/Android/sdk/tools
 ANDROID_PLATFORM=~/Library/Android/sdk/platform-tools
 export PATH=$ANDROID_NDK:$ANDROID_NDK_ARM_BIN:$ANDROID_PLATFORM:$ANDROID_SDK_TOOLS:$PATH
 
@@ -74,7 +74,8 @@ POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S,%D}'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z svn coffee git-remote-branch github sublime gulp osx yarn npm iterm2 adb pip)
+plugins=(git z svn coffee git-remote-branch github sublime gulp osx yarn npm iterm2 adb pip python node aws zsh-autosuggestions)
+# custom plugins: zsh-autosuggestions
 
 # User configuration
 export PATH=$HOME/.shells:/usr/local/bin:$PATH
@@ -89,6 +90,9 @@ export PATH=~/.npm-global/bin:$PATH
 # export COW_INSTALLDIR=""
 
 export SVN_EDITOR=vim
+
+# Python user bin directory
+export PATH=~/Library/Python/2.7/bin:$PATH
 
 # For Android Studio Gradle
 # export PATH=/Applications/Android\ Studio.app/Contents/gradle/gradle-2.10/bin/:$PATH
