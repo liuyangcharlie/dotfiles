@@ -74,7 +74,7 @@ POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S,%D}'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z svn coffee git-remote-branch github sublime gulp osx yarn npm iterm2 adb pip python node aws zsh-autosuggestions)
+plugins=(git z svn coffee git-remote-branch github sublime gulp osx yarn npm iterm2 adb pip python node aws zsh-autosuggestions docker docker-machine boot2docker)
 # custom plugins: zsh-autosuggestions
 
 # User configuration
