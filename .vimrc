@@ -45,6 +45,8 @@
 " => Customized by liuyangcharlie
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd vimenter * NERDTree
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
 map <S-Right> :tabn<CR>
 map <S-Left>  :tabp<CR>
 
@@ -81,6 +83,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -100,8 +103,15 @@ filetype plugin on
 
 " plugin settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:vim_markdown_folding_disabled=0
+let g:vim_markdown_folding_disabled=1
 
+
+" customized plugin settings 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:nerdtree_tabs_open_on_new_tab=1
+let g:nerdtree_tabs_autoclose=1
+let g:nerdtree_tabs_no_startup_for_diff=1
+let g:nerdtree_tabs_open_on_console_startup=1
 
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
