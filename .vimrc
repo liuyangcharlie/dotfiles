@@ -45,6 +45,8 @@
 " => Customized by liuyangcharlie
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd vimenter * NERDTree
+map <S-Right> :tabn<CR>
+map <S-Left>  :tabp<CR>
 
 
 """""""""" Vundle configurations"""""""""""""
