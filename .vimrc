@@ -108,6 +108,7 @@ let g:vim_markdown_folding_disabled=1
 
 " customized plugin settings 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let NERDTreeShowHidden=1
 let g:nerdtree_tabs_open_on_new_tab=1
 let g:nerdtree_tabs_autoclose=1
 let g:nerdtree_tabs_no_startup_for_diff=1
