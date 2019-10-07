@@ -20,6 +20,9 @@ export ANDROID_SDK_TOOLS=~/Library/Android/sdk/tools
 ANDROID_PLATFORM=~/Library/Android/sdk/platform-tools
 export PATH=$ANDROID_NDK:$ANDROID_NDK_ARM_BIN:$ANDROID_PLATFORM:$ANDROID_SDK_TOOLS:$PATH
 
+# export python3 user bin path
+export PATH=~/Library/Python/3.7/bin:$PATH
+
 # env variable configuration for Golang
 # export GOPATH=~/Documents/Code/common/src/go/src/:$GOPATH
 

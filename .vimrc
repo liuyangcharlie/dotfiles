@@ -214,6 +214,10 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=2
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Customized VIM user interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set cursorline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
